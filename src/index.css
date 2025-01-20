@@ -184,3 +184,61 @@ main section.about article div.text div.sns a {
     color: black;
     text-decoration: none;
 }
+
+main section.features div.heading {
+    margin-bottom: 3rem;
+}
+
+main section.features div.heading h4 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #ed4848;
+}
+
+main section.features div.heading h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+main section.features article {
+    display: flex;
+    gap: 0 2rem;
+}
+
+main section.features article div.card {
+    flex: 1;
+    padding: 2rem;
+    cursor: pointer;
+    background: #fff;
+}
+
+main section.features article div.card div.icon {
+    font-size: 2.5rem;
+    color: #ff6a6a;
+}
+
+main section.features article div.card h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+main section.features article div.card p {
+    font-size: 1.15rem;
+}
+
+main section.features article div.card:hover {
+    color: white;
+    background-color: lightcoral;
+    transition: 0.5s ease-in-out;
+}
+
+main section.features article div.card:hover div.icon {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+main div.background {
+    height: 650px;
+    background: url('assets/background.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
