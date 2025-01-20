@@ -269,13 +269,107 @@ main section.about article div.text h3 strong {
     color: #ed4848;
 }
 
+main section.contact div.heading {
+    margin-bottom: 3rem;
+}
+
+main section.contact div.heading h4 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #ed4848;
+}
+
+main section.contact div.heading h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+main section.contact article {
+    display: flex;
+    gap: 0 2rem;
+}
+
+main section.contact article div.info {
+    flex: 3;
+}
+
 main section.features article div.card:hover {
     color: white;
     background-color: lightcoral;
     transition: 0.5s ease-in-out;
 }
 
+main section.contact article div.info div.card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+}
+
 main section.features article div.card:hover div.icon {
     color: white;
     transition: 0.5s ease-in-out;
+}
+
+main section.contact article div.info div.card div.icon {
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+main section.contact article div.info div.card div.text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main section.contact article form {
+    flex: 7;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+}
+
+main section.contact article form fieldset {
+    margin-bottom: 1.25rem;
+}
+
+main section.contact article form fieldset label {
+    display: block;
+    margin-bottom: 0.85rem;
+}
+
+main section.contact article form fieldset input {
+    width: 100%;
+    padding: 0.625rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+main section.contact article form fieldset input:focus {
+    border: 1px solid #719ece;
+    box-shadow: 0 0 10px #719ece;
+}
+
+main section.contact article form fieldset textarea {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+main section.contact article form fieldset textarea:focus {
+    outline: none;
+    border: 1px solid #719ece;
+    box-shadow: 0 0 10px #719ece;
+}
+
+main section.contact article form button {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    background-color: #f78b00;
+    border: none;
+    border-radius: 10px;
 }
