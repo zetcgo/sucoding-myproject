@@ -169,10 +169,6 @@ main section.about article div.text h3 {
     font-weight: 700;
 }
 
-main section.about article div.text h3 strong {
-    color: #ed4848;
-}
-
 main section.about article div.text p {
     margin: 1rem 0;
     font-size: 1.15rem;
@@ -226,6 +222,53 @@ main section.features article div.card p {
     font-size: 1.15rem;
 }
 
+main div.background {
+    height: 650px;
+    background: url('assets/background.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+main section.portfolio div.heading {
+    margin-bottom: 3rem;
+}
+
+main section.portfolio div.heading h4 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #ed4848;
+}
+
+main section.portfolio div.heading h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+main section.portfolio article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+main section.portfolio article div.card {
+    padding: 1rem;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+main section.portfolio article div.card h3 {
+    font-size: 1.75rem;
+}
+
+main section.portfolio article div.card strong {
+    display: block;
+    margin: 0.5rem 0;
+    color: #ff6a6a;
+}
+
+main section.about article div.text h3 strong {
+    color: #ed4848;
+}
+
 main section.features article div.card:hover {
     color: white;
     background-color: lightcoral;
@@ -235,10 +278,4 @@ main section.features article div.card:hover {
 main section.features article div.card:hover div.icon {
     color: white;
     transition: 0.5s ease-in-out;
-}
-
-main div.background {
-    height: 650px;
-    background: url('assets/background.jpg') no-repeat fixed center center;
-    background-size: cover;
 }
