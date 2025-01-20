@@ -1,4 +1,5 @@
 @import url('https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,19 +16,20 @@ button {
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
 }
 
 header h1 button {
     font-size: 2rem;
     font-weight: bold;
+    color: white;
 }
 
 header nav ul {
@@ -40,4 +42,95 @@ header nav ul li {
 
 header nav ul li button {
     font-size: 1.2rem;
+    color: white;
+}
+
+main section {
+    padding: 5rem 0;
+    font-family: Poppins, sans-serif;
+}
+
+main section.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background:
+        linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 800%)),
+        url('assets/me.jpg') center center;
+    background-size: cover;
+}
+
+main section.intro h4 {
+    font-size: 2rem;
+}
+
+main section.intro h2 {
+    margin: 2rem 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+
+main section.intro h2 span::after {
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    content: '';
+    background-color: white;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+main section.intro p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+main section.intro button.download {
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+main section.intro button.mouse {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 2rem;
+    color: white;
+    animation: up-down 1s ease-in-out infinite;
+}
+
+@keyframes up-down {
+    0% {
+        bottom: 1rem;
+    }
+
+    50% {
+        bottom: 1.5rem;
+    }
+
+    100% {
+        bottom: 1rem;
+    }
 }
