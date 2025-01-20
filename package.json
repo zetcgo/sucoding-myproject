@@ -1,0 +1,25 @@
+{
+    "name": "sucoding-myproject",
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --check .",
+        "format:fix": "prettier --write .",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "lint:css": "stylelint **/*.css",
+        "lint:css:fix": "stylelint --fix **/*.css"
+    },
+    "devDependencies": {
+        "eslint": "^9.18.0",
+        "eslint-plugin-prettier": "^5.2.3",
+        "gitmoji-cli": "^9.5.0",
+        "lefthook": "^1.10.8",
+        "npm-check-updates": "^17.1.14",
+        "prettier": "^3.4.2",
+        "stylelint": "^16.13.2",
+        "stylelint-config-recess-order": "^6.0.0",
+        "stylelint-config-standard": "^37.0.0",
+        "stylelint-order": "^6.0.4"
+    }
+}
