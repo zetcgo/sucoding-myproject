@@ -46,8 +46,24 @@ header nav ul li button {
 }
 
 main section {
-    padding: 5rem 0;
+    padding: 5rem;
     font-family: Poppins, sans-serif;
+}
+
+main section div.heading {
+    margin-bottom: 3rem;
+}
+
+main section.intro h4 {
+    font-size: 2rem;
+}
+
+main section.intro h2 {
+    margin: 2rem 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 
 main section.intro {
@@ -62,18 +78,6 @@ main section.intro {
         linear-gradient(rgb(0 0 0 / 80%), rgb(0 0 0 / 800%)),
         url('assets/me.jpg') center center;
     background-size: cover;
-}
-
-main section.intro h4 {
-    font-size: 2rem;
-}
-
-main section.intro h2 {
-    margin: 2rem 0;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
-    letter-spacing: 3px;
 }
 
 main section.intro h2 span::after {
@@ -136,37 +140,38 @@ main section.intro button.mouse {
     }
 }
 
-main section.about div.heading {
-    margin-bottom: 3rem;
-}
-
-main section.about div.heading h4 {
+main section div.heading h4 {
     font-size: 1.35rem;
     font-weight: 800;
     color: #ed4848;
 }
 
-main section.about div.heading h2 {
+main section div.heading h2 {
     font-size: 3.5rem;
     font-weight: 800;
 }
 
 main section.about article {
     display: flex;
+    gap: 0 2rem;
 }
 
 main section.about article img {
-    width: 50vw;
+    flex: 1;
 }
 
 main section.about article div.text {
-    padding: 0 2rem;
+    flex: 1;
 }
 
 main section.about article div.text h3 {
     margin-bottom: 1rem;
     font-size: 2.25rem;
     font-weight: 700;
+}
+
+main section.about article div.text h3 strong {
+    color: #ed4848;
 }
 
 main section.about article div.text p {
@@ -179,21 +184,6 @@ main section.about article div.text div.sns a {
     font-size: 2.5rem;
     color: black;
     text-decoration: none;
-}
-
-main section.features div.heading {
-    margin-bottom: 3rem;
-}
-
-main section.features div.heading h4 {
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: #ed4848;
-}
-
-main section.features div.heading h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
 }
 
 main section.features article {
@@ -228,21 +218,6 @@ main div.background {
     background-size: cover;
 }
 
-main section.portfolio div.heading {
-    margin-bottom: 3rem;
-}
-
-main section.portfolio div.heading h4 {
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: #ed4848;
-}
-
-main section.portfolio div.heading h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
-}
-
 main section.portfolio article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -259,29 +234,10 @@ main section.portfolio article div.card h3 {
     font-size: 1.75rem;
 }
 
-main section.portfolio article div.card strong {
+main section.portfolio article div.card h3 strong {
     display: block;
     margin: 0.5rem 0;
     color: #ff6a6a;
-}
-
-main section.about article div.text h3 strong {
-    color: #ed4848;
-}
-
-main section.contact div.heading {
-    margin-bottom: 3rem;
-}
-
-main section.contact div.heading h4 {
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: #ed4848;
-}
-
-main section.contact div.heading h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
 }
 
 main section.contact article {
