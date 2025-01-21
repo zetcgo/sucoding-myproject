@@ -46,6 +46,10 @@ header {
     padding: 1rem;
 }
 
+header.active {
+    background-color: black;
+}
+
 header h1 button {
     font-size: 2rem;
     font-weight: bold;
